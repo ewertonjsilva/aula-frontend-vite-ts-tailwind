@@ -1,4 +1,4 @@
-import type { ChangeEvent } from 'react';
+// import type { ChangeEvent } from 'react';
 
 // O TS já sabe o tipo do 'e' sozinho, basta passar o mouse por cima
 {/* <input onChange={(e) => console.log(e.target.value)} /> */}
