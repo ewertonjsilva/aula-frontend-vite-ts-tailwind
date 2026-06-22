@@ -1,0 +1,18 @@
+
+src/
+├── assets/          # Imagens, ícones (SVGs), fontes globais
+├── components/      # Componentes globais e reutilizáveis (botões, inputs, cards)
+│   ├── Button.tsx
+│   └── Input.tsx
+├── hooks/           # Custom Hooks (reutilização de lógica com estados)
+├── interfaces/      # Definições de tipos e interfaces globais (opcional)
+├── layouts/         # Layouts da aplicação (ex: DashboardLayout, AuthLayout)
+├── screens/         # Ou "pages" - Componentes que representam telas inteiras
+│   └── Home.tsx
+├── services/        # Configurações de API (Axios, Fetch, etc.)
+├── utils/           # Funções utilitárias puras (formatadores de data, validadores)
+├── App.tsx          # Componente raiz que coordena as telas/rotas
+├── index.css        # Estilos globais (onde está o @import "tailwindcss")
+└── main.tsx         # Ponto de entrada do React que inicializa o app
+
+

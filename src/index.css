@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+
+/* 
+  Tailwind v4 introduziu uma forma muito elegante de criar pseudo-classes diretamente no CSS usando o @utility. 
+  Aqui estamos definindo um botão primário com estilos reutilizáveis. 
+*/
+
+@utility btn-primary {
+  @apply px-4 py-2 bg-sky-600 text-white rounded-lg hover:bg-sky-500 transition-colors;
+}
+
+/*
+  E no seu HTML/JSX você usaria apenas:
+  <button className="btn-primary">Enviar</button>
+*/
+
+/*
+  Obs: 
+  Mudar o validador para Tailwind CSS, pois por padrão este arquivo sendo um css é interpretado como CSS normal 
+  (Tem que ter a extensão do Tailwind instalada no VS Code)
+  Com o arquivo index.css aberto no VS Code, olhe para o canto inferior direito da barra de status do editor.
+  Você verá a palavra "CSS". Clique nela.
+  Na barra de pesquisa que abrir no topo do editor, digite Tailwind CSS e selecione essa opção.
+
+  *Dicas Tailwind:*
+- Use `@apply` para criar classes personalizadas reutilizáveis.
+- Aproveite as variantes responsivas (e.g., `md:`, `lg:`) para adaptar seu design a diferentes tamanhos de tela.
+- Utilize as pseudo-classes (e.g., `hover:`, `focus:`, `active:`) para melhorar a interatividade dos seus elementos.
+https://gemini.google.com/app/f40401dad9c9d6ea
+*/
