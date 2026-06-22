@@ -1,4 +1,4 @@
-import { MetricCard } from '../components/MetricCard';
+import { MetricCard } from '../components/exemplos/MetricCard';
 
 // Dados falsos para preencher a tabela da Dashboard
 const RECENT_USERS = [

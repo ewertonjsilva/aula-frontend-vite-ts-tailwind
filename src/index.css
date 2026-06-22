@@ -1,13 +1,15 @@
-@import "tailwindcss";
-
-
-/* 
-  Tailwind v4 introduziu uma forma muito elegante de criar pseudo-classes diretamente no CSS usando o @utility. 
-  Aqui estamos definindo um botão primário com estilos reutilizáveis. 
-*/
+﻿@import "tailwindcss";
 
 @utility btn-primary {
   @apply px-4 py-2 bg-sky-600 text-white rounded-lg hover:bg-sky-500 transition-colors;
+}
+
+@utility btn-soft {
+  @apply inline-flex items-center justify-center rounded-full border border-slate-200 bg-slate-100 px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-200;
+}
+
+@utility tab-button {
+  @apply rounded-3xl border border-slate-200 px-4 py-2 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500;
 }
 
 /*
