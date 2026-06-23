@@ -1,11 +1,7 @@
-﻿import { MockupComparison } from './components/MockupComparison';
+﻿import { Dashboard } from './screens/Dashboard';
 
-export default function App() {
-  return (
-    <div className="min-h-screen bg-slate-50 text-slate-950 font-sans">
-      <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
-        <MockupComparison />
-      </main>
-    </div>
-  );
+function App() {
+  return <Dashboard />;
 }
+
+export default App;

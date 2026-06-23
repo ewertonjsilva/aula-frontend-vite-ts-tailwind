@@ -1,11 +1,30 @@
+
+import { useEffect, useState } from 'react';
 import { LoginForm } from './components/exemplos/LoginForm';
 
+type Theme = 'light' | 'dark';
+
 function App() {
+    const [theme, setTheme] = useState<Theme>(() => {
+        const savedTheme = window.localStorage.getItem('theme');
+        return savedTheme === 'light' ? 'light' : 'dark';
+    });
+
+    useEffect(() => {
+        window.localStorage.setItem('theme', theme);
+    }, [theme]);
+
     return (
-        <div className="flex h-screen w-screen items-center justify-center bg-zinc-950 p-4">
-            <LoginForm />
+        <div
+            className={`
+                flex h-screen w-screen items-center justify-center p-4 transition-colors duration-300  
+                ${theme === 'dark' ? 'bg-slate-950 text-slate-100' : 'bg-slate-50 text-slate-950'
+            }`}
+        >
+            <LoginForm theme={theme} onThemeChange={setTheme} />
         </div>
     );
 }
 
 export default App;
+
